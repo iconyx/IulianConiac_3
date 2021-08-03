@@ -1,0 +1,128 @@
+.foodmenu {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+// @keyframes fade-in {
+//     0% {
+//         opacity: .1;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+.foodmenu-dish-card {
+
+    // testborder
+    border: 0px solid blue;
+    // positioning
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    // aspect
+    background-color: white;
+    border-radius: 8px;
+    // padding: 30px 0;
+    @include shadow;
+    // preparing animation by hiding the checkmark
+    overflow: hidden;
+    // setting maxheight for textoverflow replacement with ellipsis
+    max-height: 50px;
+}
+.foodmenu-dish-description {
+    // testborder
+    border: 0px solid red;
+    // spacing
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.foodmenu-dish-ingredients {
+    // line-height: 1;
+    margin: 0;
+    font-size: 0.6rem;
+    // solving text overflow
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 150px;
+}
+
+.foodmenu-dish-price {
+    // testborder
+    border: 0px solid black;
+    // aspect
+    background-color: white;
+    font-size: 0.6rem;
+    font-weight: 800;
+    // spacing
+    padding: 10px 15px;
+    // positioning
+    //attempting to center text vertically inside flex-item
+    display: flex;
+    align-items: flex-end;
+}
+
+.foodmenu-dish-selected {
+    // aspect
+    font-size: 0.8rem;
+    background-color: rgb(68, 216, 179);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    //attempting to center text vertically inside flex-item
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // transition applied to the child
+    transition: all 0.5s ease-in;
+    width: 0.001px;
+}
+.foodmenu-dish-card:hover .foodmenu-dish-selected {
+    width: 48px;
+    & i {
+        transition-duration: 0.5s;
+        transform: rotate(1turn);
+    }
+}
+
+// fade-in effect for cards
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+}
+
+// delayed animation of cards
+
+// initial version
+// .fade-in.one {
+//     animation-delay: 0.1s;
+// }
+// .fade-in.two {
+//     animation-delay: 0.5s;
+// }
+// .fade-in.three {
+//     animation-delay: 1s;
+// }
+
+// loop to re-create different delay classes 
+@for $i from 1 through 9 {
+    .fade-in {
+        &.delay-#{$i} {
+        animation-delay: $i * 0.5s;
+    }
+}
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 3">
+    <meta name="author" content="Iulian Coniac">
+    <title>Project 3</title>
+    <!-- linking main CSS file -->
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- linking icons imported from Font Awesome library -->
+    <script src="https://kit.fontawesome.com/3473fdcbbc.js" crossorigin="anonymous"></script>
+    <!-- linking required fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- linking icons from Font Awesome -->
+    <script src="https://kit.fontawesome.com/3473fdcbbc.js" crossorigin="anonymous"></script>
+    <!-- attempt to solve toggle heart with jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+
+    <!-- THE HEADER SECTION -->
+
+    <header>
+        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        <picture>
+            <img 
+            src="images/logo/ohmyfood@2x.svg" 
+            alt="Ohmyfood logo">
+        </picture>
+    </header>
+
+    <!-- THE MAIN SECTION -->
+
+    <section class="main">
+        <div class="hero">
+            <div class="rest-image">
+                <div class="rectangle corners-top"></div>
+            </div>
+            <div class="restaurant-name">
+                <h1>Bastille</h1>
+                <div><i class="heart fa fa-heart-o"></i>
+                    <script>
+                        $(".heart.fa").click(function() {
+                        $(this).toggleClass("fa-heart fa-heart-o");
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="foodmenu">
+            <h3>ENTREES</h3>
+            <div class="foodmenu-dish-card fade-in delay-1">
+                <div class="foodmenu-dish-description">
+                    <h4>Citrus Squid Carpaccio</h4>
+                    <div class="foodmenu-dish-ingredients">with orange zest</div>
+                </div>
+                <div class="foodmenu-dish-price">25&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-2">
+                <div class="foodmenu-dish-description">
+                    <h4>Grandmother's Vegetable Soup</h4>
+                    <div class="foodmenu-dish-ingredients">Carrots, parsnips, Jerusalem artichocke</div>
+                </div>
+                <div class="foodmenu-dish-price">35&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-3">
+                <div class="foodmenu-dish-description">
+                    <h4>Onion Soup</h4>
+                    <div class="foodmenu-dish-ingredients">Revisted</div>
+                </div>
+                <div class="foodmenu-dish-price">20&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <h3>MAIN DISH</h3>
+            <div class="foodmenu-dish-card fade-in delay-4">
+                <div class="foodmenu-dish-description">
+                    <h4>Scallops</h4>
+                    <div class="foodmenu-dish-ingredients">with mashed parsnip</div>
+                </div>
+                <div class="foodmenu-dish-price">40&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-5">
+                <div class="foodmenu-dish-description">
+                    <h4>Magret de canard</h4>
+                    <div class="foodmenu-dish-ingredients">with mashed potatoes</div>
+                </div>
+                <div class="foodmenu-dish-price">35&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-6">
+                <div class="foodmenu-dish-description">
+                    <h4>Game Hen</h4>
+                    <div class="foodmenu-dish-ingredients">with vegetable gnocchis</div>
+                </div>
+                <div class="foodmenu-dish-price">44&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            
+            <h3>DESSERTS</h3>
+            <div class="foodmenu-dish-card fade-in delay-7">
+                <div class="foodmenu-dish-description">
+                    <h4>Floral Ice Cream</h4>
+                    <div class="foodmenu-dish-ingredients">with hazelnut butter</div>
+                </div>
+                <div class="foodmenu-dish-price">18&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-8">
+                <div class="foodmenu-dish-description">
+                    <h4>Chocolate Lava Cake</h4>
+                    <div class="foodmenu-dish-ingredients">Revisited</div>
+                </div>
+                <div class="foodmenu-dish-price">22&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+
+            <div class="foodmenu-dish-card fade-in delay-9">
+                <div class="foodmenu-dish-description">
+                    <h4>Napolean</h4>
+                    <div class="foodmenu-dish-ingredients">with blueberries and marzipan</div>
+                </div>
+                <div class="foodmenu-dish-price">23&euro;</div>
+                <div class="foodmenu-dish-selected">
+                    <div class=""><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            
+            <a href="#"><div class="button button--gradient button--round-corners button--shadow">Order</div></a>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+        <p class="logo--font logo--white">ohmyfood</p>
+        <a href="#"><i class="fas fa-utensils fa-fw"></i>&nbsp;Suggest a restaurant</a>
+        <a href="#"><i class="fas fa-hands-helping fa-fw"></i>&nbsp;Become a partner</a>
+        <a href="#">Legal</a>
+        <a href="#">Contact</a>
+    </footer>
+
+</body>
+</html>

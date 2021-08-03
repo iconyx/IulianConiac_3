@@ -1,0 +1,13 @@
+//defined for round corners effect above restaurant title
+.rectangle {
+    // testborder
+    border: 0px solid red;
+    //aspect
+    height: 15px;
+    width: auto;
+    background-color: $background-color;
+}
+
+.corners-top {
+    border-radius: 15px 15px 0 0;
+}

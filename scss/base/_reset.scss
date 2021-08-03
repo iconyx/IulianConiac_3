@@ -1,0 +1,27 @@
+
+body {
+    font-family: $text-font;
+
+    // including pre-defined breakpoints (defined in _variables as map)
+    // and media query selection (defined in _mixins)
+    @include breakpoint(mobile) {
+        // test background
+        // background: yellow;
+        min-width: 360px;
+        
+    }
+    @include breakpoint(tablet) {
+        // test background
+        // background: lightyellow;
+    }
+    @include breakpoint(desktop) {
+        // test background
+        // background: lightgreen;
+        // max-width: 1200px;
+    }
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}

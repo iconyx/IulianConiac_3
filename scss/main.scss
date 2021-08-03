@@ -1,0 +1,32 @@
+@import 'abstracts/variables';
+@import 'abstracts/headings';
+@import 'abstracts/mixins';
+
+/* @import
+  'vendors/bootstrap',
+  'vendors/jquery-ui'; */
+
+@import 'base/reset';
+
+@import 'layout/header';
+@import 'layout/aside';
+@import 'layout/footer';
+
+/* @import
+  'components/buttons',
+  'components/carousel',
+  'components/cover',
+  'components/dropdown'; */
+
+  @import 'components/logo';
+  @import 'components/map';
+  @import 'components/buttons';  
+  @import 'components/rectangle';
+  @import 'components/foodmenu';
+
+@import 'pages/home_page';
+@import 'pages/restaurant_page'
+
+/* @import
+  'themes/theme',
+  'themes/admin'; */

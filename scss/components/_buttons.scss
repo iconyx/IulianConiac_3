@@ -1,0 +1,26 @@
+// properties for main type of buttons across the web pages
+.button {
+    // boxing:
+    margin: 15px;
+    padding: 10px 20px;
+    width: fit-content;
+    // horizontal centering:
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    // minimum size
+    min-width: 100px;
+    // rounded corners
+    &--round-corners {
+        border-radius: 25px;
+    }
+    // background gradient
+    &--gradient {
+        color: white;
+        background-image: linear-gradient($secondary-color, $primary-color 135%);
+    }
+    // shadow
+    &--shadow {
+        box-shadow: 0px 3px 3px 0px darken($background-color, 25%);
+    }
+}

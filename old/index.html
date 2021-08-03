@@ -7,13 +7,15 @@
     <meta name="description" content="Project 3">
     <meta name="author" content="Iulian Coniac">
     <title>Project 3</title>
-    <!-- linking main CSS file -->
-    <link rel="stylesheet" href="scss/main.css">
+    <!-- linking normalized CSS library -->
+    <link href="scss/normalize.css" type="text/css" rel="stylesheet">
+    <!-- linking CSS file(s) -->
+    <link rel="stylesheet" href="scss/style.css">
     <!-- linking icons imported from Font Awesome library -->
     <script src="https://kit.fontawesome.com/3473fdcbbc.js" crossorigin="anonymous"></script>
     <!-- linking required fonts from Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <!-- linking icons from Font Awesome -->
     <script src="https://kit.fontawesome.com/3473fdcbbc.js" crossorigin="anonymous"></script>
@@ -26,35 +28,36 @@
         <picture>
             <img 
             src="images/logo/ohmyfood@2x.svg" 
-            alt="Ohmyfood logo+">
+            alt="Ohmyfood logo">
         </picture>
     </header>
 
     <!-- THE EXPLORATION MAP SECTION -->
 
-    <div class="welcome-board">
-        <section class="map">
-            <div class="map--location"><i class="fas fa-map-marker-alt"></i>&nbsp;Paris, Belleville</div>
-            <h2 class="map--title">Book the menu you like</h2>
-            Discover top-of-the-art restaurants we picked for you
-            <div class="button button--round-corners button--gradient button--shadow"><a href="#">Explore our restaurants</a></div>
-        </section>
-        <aside class="help">
-            <h2>How it works</h2>
-            <ol>
-                <li><i class="fas fa-mobile-alt"></i>&nbsp;Chose a restaurant</li>
-                <li><i class="fas fa-list-ul"></i>&nbsp;Create your menu</li>
-                <li><i class="fas fa-store"></i>&nbsp;Go enjoy it at the restaurant</li>
-            </ol>
-        </aside>
-    </div>
+    <section class="map">
+        <i class="fas fa-map-marker-alt"></i>&nbsp;Paris, Belleville
+        Book the menu you like
+        Discover top-of-the-art restaurant we picked for you
+        <a href="#">Explore our restaurant</a>
+    </section>
+
+    <!-- THE STEPS OF HOW IT WORKS -->
+
+    <aside>
+        How it works
+        <ol>
+            <li><i class="fas fa-mobile-alt"></i>&nbsp;Chose a restaurant</li>
+            <li><i class="fas fa-list-ul"></i>&nbsp;Create your menu</li>
+            <li><i class="fas fa-store"></i>&nbsp;Go enjoy it at the restaurant</li>
+        </ol>
+    </aside>
 
     <!-- RESTAURANTS SECTION -->
 
     <section class="restaurants">
-        <h2>Restaurants</h2>
+        <h1>Restaurants</h1>
         <div class="rest-card">
-            <a href="/bastille.html">
+            <a href="#">
                 <div class="label">
                     New
                 </div>
@@ -119,11 +122,12 @@
 
     <footer>
         <p class="logo--font logo--white">ohmyfood</p>
-        <a href="#"><i class="fas fa-utensils fa-fw"></i>&nbsp;Suggest a restaurant</a>
-        <a href="#"><i class="fas fa-hands-helping fa-fw"></i>&nbsp;Become a partner</a>
+        <a href="#"><i class="fas fa-utensils"></i>&nbsp;Suggest a restaurant</a>
+        <a href="#"><i class="fas fa-hands-helping"></i>&nbsp;Become a partner</a>
         <a href="#">Legal</a>
         <a href="#">Contact</a>
     </footer>
-  
+
+    
 </body>
 </html>

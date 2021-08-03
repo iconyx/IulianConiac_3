@@ -1,0 +1,35 @@
+h1 {
+    margin: 0;
+    font-family: $title-font, serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: $text-font, 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: $text-font, 'Arial', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+
+    // for underline effect
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 20px;
+        background-color: limegreen;
+        border: 1px solid limegreen;
+    }
+}
+
+h4 {
+    font-size: 0.8rem;
+    margin: 0;
+}

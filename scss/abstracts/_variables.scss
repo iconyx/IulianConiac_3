@@ -1,0 +1,18 @@
+$logo-font: Shrikhand;
+$title-font: Shrikhand;
+$text-font: Roboto;
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f5f5f5;
+
+$heart-color-green: green;
+$heart-color-red: red;
+$favorite-checked: false;
+
+// define map for breakpoints
+$breakpoint: (
+    'mobile': 480px,
+    'tablet': 960px,
+    'desktop': 1200px
+);

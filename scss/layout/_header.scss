@@ -1,0 +1,12 @@
+text-font {
+    color: $primary-color;
+    font-family: $text-font;
+}
+
+header {
+    margin-bottom: 5px;
+    & > picture {
+        display: flex;
+        justify-content: center;
+    }
+}
