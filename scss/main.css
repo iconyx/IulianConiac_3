@@ -237,9 +237,19 @@ footer .fas {
   background-image: linear-gradient(#FF79DA, #9356DC 135%);
 }
 
+.button--gradient:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), color-stop(135%, #a16be0));
+  background-image: linear-gradient(#ff93e1, #a16be0 135%);
+}
+
 .button--shadow {
   -webkit-box-shadow: 0px 3px 3px 0px #b5b5b5;
           box-shadow: 0px 3px 3px 0px #b5b5b5;
+}
+
+.button--shadow:hover {
+  -webkit-box-shadow: 0px 5px 5px 0px #767676;
+          box-shadow: 0px 5px 5px 0px #767676;
 }
 
 .rectangle {
