@@ -156,6 +156,87 @@ footer .fas {
   'components/carousel',
   'components/cover',
   'components/dropdown'; */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: loader-out 1s 3.5s linear forwards;
+          animation: loader-out 1s 3.5s linear forwards;
+}
+
+@-webkit-keyframes loader-out {
+  to {
+    top: -100%;
+  }
+}
+
+@keyframes loader-out {
+  to {
+    top: -100%;
+  }
+}
+
+.loading-spinner {
+  position: absolute;
+  z-index: 9999;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-top: 8px solid blue;
+  border-bottom: 8px solid blue;
+  border-left: 8px solid grey;
+  border-right: 8px solid grey;
+  -webkit-animation-name: loading-spinner;
+          animation-name: loading-spinner;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* .logo--font {
         font-family: $logo-font;
     }
