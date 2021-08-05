@@ -61,6 +61,42 @@ header > a {
     }    
 }
 
-.heart {
-    color: $primary-color;
-}
+
+
+// testing heart toggle below - IN PROGRESS
+
+// #toggle-heart {
+//     position: absolute;
+//     left: -100vw;
+//   }
+
+//   .heart {
+//     color: #aab8c2;
+//   }
+  
+//   .heart2 {
+//     position: relative;
+//     color: green;
+//     z-index: 2;
+//   }
+
+//  #toggle-heart:checked + label {
+//     animation: heart 2s linear;
+//   }
+
+//   [for='toggle-heart'] {
+//     cursor: pointer;
+//   }
+
+// // #toggle-heart:hover + label {
+// //   animation: heart 2s linear;
+// // }
+
+// @keyframes heart { 
+//     0% {
+//         color: transparent;
+//     }
+//     100% {
+//         color: red;
+//     }
+//   }

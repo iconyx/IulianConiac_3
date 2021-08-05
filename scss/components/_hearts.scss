@@ -1,0 +1,48 @@
+// positions a heart icon and fills it up gradually on hover
+
+.hearts-container {
+    display: grid;
+    // background: pink;
+
+    &:hover > .heart {
+        // background: linear-gradient(red, yellow) no-repeat;
+        background-size: cover;
+        background-position: top 50%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: fill-heart 0.3s forwards;
+    }
+    // DISABLED - getting heart2 out of the way in the beginning
+    // &:hover > .heart2{
+    //     position: absolute;
+    //     right: 100vw;
+    // }
+}
+
+// positions the two heart icons on top of each other
+.heart, .heart2 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+// defines initial aspect properties for heart icons
+.heart {
+    color: $background-color;
+}
+.heart2 {
+    color: black;
+}
+
+// animation settings for fill-up effect on heart on hover
+@keyframes fill-heart {
+    0% {
+        background-image: linear-gradient($background-color 100%, $primary-color 0%, $secondary-color 25%);
+    }
+    50% {
+        background-image: linear-gradient($background-color 50%, $primary-color 10%, $secondary-color 50%);
+    }
+    100% {
+        background-image: linear-gradient($background-color 0%, $primary-color 25%, $secondary-color 75%);
+    }
+}
