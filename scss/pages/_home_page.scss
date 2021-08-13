@@ -1,14 +1,5 @@
-.welcome-board {
-    @include breakpoint(desktop) {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: stretch;        
-    }
-}
-// header > i {
-//     visibility: hidden;
-// }
+// Styles specific to home page (index.html)
+
 .restaurants {
     padding: 20px;
     background-color: $background-color;
@@ -16,13 +7,11 @@
 }
 .rest-card {
     position: relative;
-
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-radius: 15px;
-
     background-color: white;
     box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.5);
 }
@@ -37,7 +26,7 @@
     object-fit: cover;
     object-position: center;
 }
-
+// label for NEW
 .label {
     position: absolute;
     top: 10px;
@@ -54,17 +43,11 @@
     padding-left: 10px;
     line-height: 0.5;
 }
-
+// heart icon
 .rest-card i {
     z-index: 99;
     position: absolute;
     bottom: 30px;
     right: 20px;
     font-size: 2rem;
-}
-
-.rest-card i.full {
-    // background: rgb(219,17,242);
-    // fill: linear-gradient(90deg, rgba(219,17,242,1) 0%, rgba(97,9,121,1) 100%);
-    fill: rgba(97,9,121,1);
 }

@@ -2,10 +2,7 @@
 
 .hearts-container {
     display: grid;
-    // background: pink;
-
     &:hover > .heart {
-        // background: linear-gradient(red, yellow) no-repeat;
         background-size: cover;
         background-position: top 50%;
         -webkit-background-clip: text;
@@ -13,7 +10,7 @@
         color: transparent;
         animation: fill-heart 0.3s forwards;
     }
-    // DISABLED - getting heart2 out of the way in the beginning
+    // DISABLED (enable if necessary) - getting heart2 out of the way in the beginning
     // &:hover > .heart2{
     //     position: absolute;
     //     right: 100vw;
@@ -31,18 +28,34 @@
     color: $background-color;
 }
 .heart2 {
-    color: black;
+    color: $heart-stroke-color;
 }
 
 // animation settings for fill-up effect on heart on hover
+
+// initial coding
+// @keyframes fill-heart {
+//     0% {
+//         background-image: linear-gradient($background-color 100%, $primary-color 0%, $secondary-color 25%);
+//     }
+//     50% {
+//         background-image: linear-gradient($background-color 50%, $primary-color 10%, $secondary-color 50%);
+//     }
+//     100% {
+//         background-image: linear-gradient($background-color 0%, $primary-color 25%, $secondary-color 75%);
+//     }
+// }
+
+
+// refactoring the above code with mixins
 @keyframes fill-heart {
     0% {
-        background-image: linear-gradient($background-color 100%, $primary-color 0%, $secondary-color 25%);
+        @include fill-heart-gradient($heart-fill-colors-list1);
     }
     50% {
-        background-image: linear-gradient($background-color 50%, $primary-color 10%, $secondary-color 50%);
+        @include fill-heart-gradient($heart-fill-colors-list2);
     }
     100% {
-        background-image: linear-gradient($background-color 0%, $primary-color 25%, $secondary-color 75%);
+        @include fill-heart-gradient($heart-fill-colors-list3);
     }
 }

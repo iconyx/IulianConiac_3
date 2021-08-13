@@ -1,13 +1,9 @@
-// properties for aside section with 3 steps of help
+// Properties for aside section with 3 steps of help
 
 .help {
     padding: 10px;
     min-width: 45%;
     background-color: white;
-    //media query breakpoints properties
-    @include breakpoint(desktop) {
-        text-align: center;        
-    }
 }
 // ordered list properties
 ol {
@@ -31,7 +27,7 @@ ol {
         border-radius: 18px;
         font-weight: 600;
         font-size: 0.8rem;
-        @include shadow;
+        @include shadow-card;
         // positioning
         position: relative;
         margin: 0 2rem 1rem 0;

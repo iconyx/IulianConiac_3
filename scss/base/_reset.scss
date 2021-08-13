@@ -1,38 +1,21 @@
 
 body {
+    // setting default font
     font-family: $text-font;
+    // centering website
+    margin: auto;
 
     // including pre-defined breakpoints (defined in _variables as map)
     // and media query selection (defined in _mixins)
     @include breakpoint(mobile) {
-        // test background
-        // background: yellow;
-        min-width: 360px;
-        
+        min-width: 320px;
     }
     @include breakpoint(tablet) {
-        // test background
-        // background: lightyellow;
+        max-width: 640px;
     }
     @include breakpoint(desktop) {
-        // test background
-        // background: lightgreen;
-        // max-width: 1200px;
+        max-width: 800px;
     }
-
-    //animation attempt to hide the body
-    // animation: opac 3s ease-out forwards;
-    // @keyframes opac {
-    //     0% {
-    //         opacity: 0;
-    //     }
-    //     75% {
-    //         opacity: 0;
-    //     }
-    //     100% {
-    //         opacity: 1;
-    //     }
-    // }
 }
 
 a:link, a:visited, a:hover, a:active {

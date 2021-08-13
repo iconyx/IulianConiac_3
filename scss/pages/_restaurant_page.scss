@@ -1,31 +1,17 @@
+// Styles specific only to restaurants pages
+
 // setting arrow-back position in header
 header {
     position: relative;
+    & > a {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
 }
-
-header > a {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.hero {
-    // testborder
-    // border: 1px solid black;
-
-    // previous attempt to position the heart
-    // position: relative;
-    // & i {
-    //     position: absolute;
-    //     right: 20px;
-    //     bottom: 20px;
-    // }
-}
-
 .main {
     background-color: $background-color;
 }
-
 .rest-image {
     display: flex;
     flex-flow: column wrap;
@@ -34,28 +20,13 @@ header > a {
     background-size: cover;
     min-height: 250px;
 }
-
-// .rest-image picture {
-//     width: auto;
-//     height: 120px;
-// }
-// .rest-image img {
-//     width: 100%;
-//     height: inherit;
-//     object-fit: cover;
-//     object-position: center;
-// }
-
 .restaurant-name {
-    // testborder
-    // border: 0px solid blue;
     // positioning
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 0 10px;
     align-items: center;
-    // checking if selected as favorite
     & i {
         padding: 0 10px;
     }    
@@ -88,9 +59,6 @@ header > a {
 //     cursor: pointer;
 //   }
 
-// // #toggle-heart:hover + label {
-// //   animation: heart 2s linear;
-// // }
 
 // @keyframes heart { 
 //     0% {

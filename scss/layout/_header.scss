@@ -1,10 +1,6 @@
-text-font {
-    color: $primary-color;
-    font-family: $text-font;
-}
-
 header {
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     & > picture {
         display: flex;
         justify-content: center;

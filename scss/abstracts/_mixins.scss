@@ -1,0 +1,41 @@
+// BREAKPOINTS
+
+@mixin breakpoint($pointName) {
+    @if $pointName == mobile {
+        @media (max-width: map-get($breakpoint, mobile) - 1) {
+            @content;
+        }
+    }    @else if $pointName == tablet {
+            @media (min-width: 480px) and (max-width: 959px) {
+                @content;
+            }
+        } @else if $pointName == desktop {
+            @media (min-width: 960px) and (max-width: 1200px) {
+                @content;
+            }
+        }
+}
+
+// after breakpoint declaration, media query specific styles can be included anywhere with:
+// @include breakpoint(breakpointname) {...styles...}
+
+@mixin shadow-card {
+    box-shadow: 3px 3px 3px 1px darken($background-color, 25%);
+}
+// generating gradient as background image for fillheart keyframe animation (hearts.scss)
+@mixin fill-heart-gradient($list) {
+    background-image: linear-gradient($list);
+}
+
+// underline effect for foodmenu headings
+@mixin heading-underline {
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 20px;
+        background-color: limegreen;
+        border: 1px solid limegreen;
+    }
+}

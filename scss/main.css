@@ -1,3 +1,5 @@
+/* Variables and maps */
+/* Headings */
 h1 {
   margin: 0;
   font-family: Shrikhand, serif;
@@ -38,11 +40,24 @@ h4 {
   'vendors/jquery-ui'; */
 body {
   font-family: Roboto;
+  margin: auto;
 }
 
 @media (max-width: 479px) {
   body {
-    min-width: 360px;
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+  body {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  body {
+    max-width: 800px;
   }
 }
 
@@ -51,13 +66,9 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-text-font {
-  color: #9356DC;
-  font-family: Roboto;
-}
-
 header {
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 header > picture {
@@ -73,12 +84,6 @@ header > picture {
   padding: 10px;
   min-width: 45%;
   background-color: white;
-}
-
-@media (min-width: 960px) and (max-width: 1200px) {
-  .help {
-    text-align: center;
-  }
 }
 
 ol {
@@ -134,7 +139,6 @@ ol li::before {
 }
 
 footer {
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,9 +146,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
+  color: #fff;
   line-height: 1.4rem;
   padding: 20px;
+  background-color: #000;
 }
 
 footer .fas {
@@ -152,7 +157,6 @@ footer .fas {
 }
 
 /* @import
-  'components/buttons',
   'components/carousel',
   'components/cover',
   'components/dropdown'; */
@@ -281,21 +285,6 @@ footer .fas {
           box-shadow: inset 0 5px 5px -5px #9c9c9c;
 }
 
-@media (min-width: 960px) and (max-width: 1200px) {
-  .map--location {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 80%;
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1200px) {
-  .map {
-    background-color: white;
-  }
-}
-
 .button {
   margin: 15px;
   padding: 10px 20px;
@@ -356,7 +345,6 @@ footer .fas {
 }
 
 .foodmenu-dish-card {
-  border: 0px solid blue;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,7 +353,7 @@ footer .fas {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
   -webkit-box-shadow: 3px 3px 3px 1px #b5b5b5;
           box-shadow: 3px 3px 3px 1px #b5b5b5;
@@ -374,7 +362,6 @@ footer .fas {
 }
 
 .foodmenu-dish-description {
-  border: 0px solid red;
   margin: 0;
   padding: 10px;
   width: 100%;
@@ -390,10 +377,9 @@ footer .fas {
 }
 
 .foodmenu-dish-price {
-  border: 0px solid black;
-  background-color: white;
   font-size: 0.6rem;
   font-weight: 800;
+  background-color: #fff;
   padding: 10px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,7 +392,7 @@ footer .fas {
 .foodmenu-dish-selected {
   font-size: 0.8rem;
   background-color: #44d8b3;
-  color: white;
+  color: #fff;
   border-radius: 0 8px 8px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,7 +519,7 @@ footer .fas {
 }
 
 .heart2 {
-  color: black;
+  color: #666;
 }
 
 @-webkit-keyframes fill-heart {
@@ -563,24 +549,6 @@ footer .fas {
   100% {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), color-stop(25%, #9356DC), color-stop(75%, #FF79DA));
     background-image: linear-gradient(#f5f5f5 0%, #9356DC 25%, #FF79DA 75%);
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1200px) {
-  .welcome-board {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
   }
 }
 
@@ -644,10 +612,6 @@ footer .fas {
   bottom: 30px;
   right: 20px;
   font-size: 2rem;
-}
-
-.rest-card i.full {
-  fill: #610979;
 }
 
 header {

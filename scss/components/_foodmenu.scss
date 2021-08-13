@@ -1,39 +1,28 @@
+// foodmenu block
 .foodmenu {
     padding: 10px;
+    // formatting block as flexbox
     display: flex;
     flex-flow: column wrap;
 }
 
-// @keyframes fade-in {
-//     0% {
-//         opacity: .1;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
 .foodmenu-dish-card {
-
-    // testborder
-    border: 0px solid blue;
     // positioning
     margin-top: 10px;
+    // formatting dishcard as flexbox
     display: flex;
     flex-flow: row nowrap;
     // aspect
-    background-color: white;
+    background-color: $foodmenu-item-background-color;
     border-radius: 8px;
-    // padding: 30px 0;
-    @include shadow;
+    // adding shadow to the card from mixins definition
+    @include shadow-card;
     // preparing animation by hiding the checkmark
     overflow: hidden;
     // setting maxheight for textoverflow replacement with ellipsis
     max-height: 50px;
 }
 .foodmenu-dish-description {
-    // testborder
-    border: 0px solid red;
     // spacing
     margin: 0;
     padding: 10px;
@@ -41,7 +30,6 @@
 }
 
 .foodmenu-dish-ingredients {
-    // line-height: 1;
     margin: 0;
     font-size: 0.6rem;
     // solving text overflow
@@ -52,16 +40,14 @@
 }
 
 .foodmenu-dish-price {
-    // testborder
-    border: 0px solid black;
     // aspect
-    background-color: white;
     font-size: 0.6rem;
     font-weight: 800;
+    background-color: $foodmenu-item-background-color;
     // spacing
     padding: 10px 15px;
     // positioning
-    //attempting to center text vertically inside flex-item
+    //centering text vertically inside flex-item
     display: flex;
     align-items: flex-end;
 }
@@ -69,19 +55,21 @@
 .foodmenu-dish-selected {
     // aspect
     font-size: 0.8rem;
-    background-color: rgb(68, 216, 179);
-    color: white;
+    background-color: $foodmenu-item-check-background-color;
+    color: #fff;
     border-radius: 0 8px 8px 0;
-    //attempting to center text vertically inside flex-item
+    //centering text vertically inside flex-item
     display: flex;
     align-items: center;
     justify-content: center;
-
     // transition applied to the child
     transition: all 0.5s ease-in;
     width: 0.001px;
 }
+
+// rotation effect applied on checkmark on hover over dish item
 .foodmenu-dish-card:hover .foodmenu-dish-selected {
+    //extending width size on hover
     width: 48px;
     & i {
         transition-duration: 0.5s;
@@ -89,7 +77,7 @@
     }
 }
 
-// fade-in effect for cards
+// defining fade-in effect for cards on loading
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -97,7 +85,7 @@
         opacity: 1;
     }
 }
-
+// applying settings for fade-in animation
 .fade-in {
     opacity: 0;
     animation: fadeIn ease-in 1;
