@@ -39,3 +39,8 @@
         border: 1px solid limegreen;
     }
 }
+
+// test: replacing background-image for a specific restaurant
+@mixin url-background-image($restaurant) {
+    background-image: url(map-get($restaurant-background-image, $restaurant));
+}

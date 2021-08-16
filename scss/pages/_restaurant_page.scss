@@ -12,14 +12,30 @@ header {
 .main {
     background-color: $background-color;
 }
+
 .rest-image {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
-    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: cover;
     min-height: 250px;
+    background-size: cover;
+    background-position: center;
 }
+
+// background hero image for each restaurant
+.bastille {
+    @include url-background-image(bastille);
+}
+.le-gourmand {
+    @include url-background-image(le-gourmand);
+}
+.the-enchanted-plate {
+    @include url-background-image(the-enchanted-plate);
+}
+.the-full-palette {
+    @include url-background-image(the-full-palette);
+}
+
 .restaurant-name {
     // positioning
     display: flex;
