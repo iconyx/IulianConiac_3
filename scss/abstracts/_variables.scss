@@ -10,6 +10,8 @@ $background-color: #f5f5f5;
 
 // folder path to images for restaurants
 $path-to-restaurant-image: "../images/restaurants";
+
+// map for links to images for specific restaurant
 $restaurant-background-image: (
     bastille: "#{$path-to-restaurant-image}/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
     le-gourmand: "#{$path-to-restaurant-image}/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
@@ -26,9 +28,9 @@ $heart-fill-colors-list1: $background-color 100%, $primary-color 0%, $secondary-
 $heart-fill-colors-list2: $background-color 50%, $primary-color 10%, $secondary-color 50%;
 $heart-fill-colors-list3: $background-color 0%, $primary-color 25%, $secondary-color 75%;
 
-// define map for breakpoints
+// defining map for breakpoints
 $breakpoint: (
     'mobile': 480px,
     'tablet': 960px,
-    'desktop': 1200px
+    'desktop': 960px
 );

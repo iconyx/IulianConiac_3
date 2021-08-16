@@ -1,3 +1,16 @@
+html {
+    @include breakpoint(mobile) {
+        font-size: 18px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 24px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 32px;
+    }
+}
+
+
 
 body {
     // setting default font
@@ -11,10 +24,10 @@ body {
         min-width: 320px;
     }
     @include breakpoint(tablet) {
-        max-width: 640px;
+        max-width: 800px;
     }
     @include breakpoint(desktop) {
-        max-width: 800px;
+        max-width: 960px;
     }
 }
 

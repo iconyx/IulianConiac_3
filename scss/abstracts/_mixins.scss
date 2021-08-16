@@ -1,23 +1,23 @@
 // BREAKPOINTS
 
+// identifies breakpoint limits, allowing for media query specific styles to be included anywhere with:
+// @include breakpoint(breakpointname) {...styles...}
+
 @mixin breakpoint($pointName) {
     @if $pointName == mobile {
         @media (max-width: map-get($breakpoint, mobile) - 1) {
             @content;
         }
     }    @else if $pointName == tablet {
-            @media (min-width: 480px) and (max-width: 959px) {
+            @media (min-width: map-get($breakpoint, mobile)) and (max-width: map-get($breakpoint, tablet)-1) {
                 @content;
             }
         } @else if $pointName == desktop {
-            @media (min-width: 960px) and (max-width: 1200px) {
+            @media (min-width: map-get($breakpoint, desktop)) {
                 @content;
             }
         }
 }
-
-// after breakpoint declaration, media query specific styles can be included anywhere with:
-// @include breakpoint(breakpointname) {...styles...}
 
 @mixin shadow-card {
     box-shadow: 3px 3px 3px 1px darken($background-color, 25%);
@@ -34,9 +34,10 @@
         content:'';
         position: absolute;
         display: block;
-        width: 20px;
+        width: 0.8rem;
         background-color: limegreen;
         border: 1px solid limegreen;
+        width: 1.2rem;
     }
 }
 

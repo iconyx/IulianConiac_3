@@ -17,7 +17,7 @@
 }
 .restaurants picture {
     width: auto;
-    height: 120px;
+    height: 7.5rem;
 }
 .restaurants img {
     width: 100%;
@@ -28,26 +28,30 @@
 }
 // label for NEW
 .label {
+    // positioning
     position: absolute;
     top: 10px;
     right: 10px;
-
+    // aspect
     background-color: $tertiary-color;
     color: green;
     padding: 5px 15px;
     border-radius: 2px;
 }
 
+// positioning of restaurant title and location
 .rest-card h2, .rest-card p {
     padding-top: 0px;
-    padding-left: 10px;
+    padding-left: 0.8rem;
     line-height: 0.5;
 }
 // heart icon
 .rest-card i {
+    font-size: 1.8rem;
+    // positioning
     z-index: 99;
     position: absolute;
-    bottom: 30px;
-    right: 20px;
-    font-size: 2rem;
+    bottom: 2.4rem;
+    transform: translateY(50%);
+    right: 1rem;
 }

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,MAAM,EAAE,OAAO,CAAC;EACZ,WAAW,EAAE,CAAC;EACd,QAAQ,EAAE,CAAC;CACd;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,eAAe;CAC1B;;AACD,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,eAAe;EACvB,UAAU,EAAE,oBAAoB;CACnC",
-    "sources": [
-        "hearts.scss"
-    ],
-    "names": [],
-    "file": "hearts.css"
-}

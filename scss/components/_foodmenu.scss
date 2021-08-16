@@ -8,19 +8,19 @@
 
 .foodmenu-dish-card {
     // positioning
-    margin-top: 10px;
+    margin-top: 1rem;
     // formatting dishcard as flexbox
     display: flex;
     flex-flow: row nowrap;
     // aspect
     background-color: $foodmenu-item-background-color;
-    border-radius: 8px;
+    border-radius: 10px;
     // adding shadow to the card from mixins definition
     @include shadow-card;
     // preparing animation by hiding the checkmark
     overflow: hidden;
     // setting maxheight for textoverflow replacement with ellipsis
-    max-height: 50px;
+    // max-height: 50px;
 }
 .foodmenu-dish-description {
     // spacing
@@ -36,7 +36,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: 150px;
+    max-width: 10rem;
 }
 
 .foodmenu-dish-price {
@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // transition applied to the child
+    // transition effect settings
     transition: all 0.5s ease-in;
     width: 0.001px;
 }
