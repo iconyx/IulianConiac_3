@@ -40,9 +40,9 @@
     // animation settings
     animation-name: loading-spinner;
     animation-duration: 3s;
-    animation-delay: 0;
+    animation-delay: 0s;
     animation-iteration-count: 3;
-    animation-direction: forwards;
+    // animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 

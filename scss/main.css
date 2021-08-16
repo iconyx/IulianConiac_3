@@ -237,12 +237,10 @@ footer .fas {
           animation-name: loading-spinner;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-iteration-count: 3;
           animation-iteration-count: 3;
-  -webkit-animation-direction: forwards;
-          animation-direction: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
@@ -526,9 +524,8 @@ footer .fas {
 
 .hearts-container:hover > .heart {
   background-size: cover;
-  background-position: top 50%;
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   -webkit-animation: fill-heart 0.3s forwards;
           animation: fill-heart 0.3s forwards;
